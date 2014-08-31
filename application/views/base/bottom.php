@@ -60,5 +60,8 @@
 	<script type="text/javascript" src="<?php echo base_url(); ?>js/jquery/ui/jquery.ui.widget.min.js"></script>
 	<script type="text/javascript" src="<?php echo base_url(); ?>js/jquery/ui/jquery.ui.mouse.min.js"></script>
 	<script type="text/javascript" src="<?php echo base_url(); ?>js/jquery/ui/jquery.ui.draggable.min.js"></script>
+
+	<script type="text/javascript" src="<?php echo base_url(); ?>js/plmtks.js"></script>
+
 </body>
 </html>

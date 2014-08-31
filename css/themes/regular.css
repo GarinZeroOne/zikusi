@@ -112,7 +112,8 @@
 
 /* Puzzles - description block background and color */
 .theme_regular .theme_puzzles {
-	background:#006776;
+	background:rgba(1, 1, 1, 0.9);
+	
 	color:#ffffff;
 }
 
@@ -428,7 +429,7 @@
 
 /* Button */
 .theme_regular .sc_button {
-	border-color:#e0e0e0;
+	border-color:#162e3d;
 	color:#ffffff;
 }
 .theme_regular .sc_button.sc_button_style_regular {

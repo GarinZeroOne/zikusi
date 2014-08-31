@@ -4,12 +4,15 @@
 				
 				<h2></h2>
 				<div id="content" class="content_blog post_single" >
-
+					<div  class="total-encontradas"> Total encontradas: <?php echo $total_encontradas; ?> <a href="<?php echo site_url();?>recomendador_peliculas/mostrar/<?php echo $next_page; ?>"> Siguiente pagina >> </a></div>
 					<div class="itemscope" itemscope itemtype="http://schema.org/Article">
 						<article class="theme_article post_format_standard instock">
 							<div class="post_content without_paddings">
+
 								<div itemprop="articleBody" class="post_text_area">
+
 									<div class="sc_section sc_puzzles custom-container">
+										
 
 										<?php foreach($peliculas as $pelicula): ?>
 
@@ -20,7 +23,7 @@
 													
 													<span class="post_category theme_accent_bg" data-categoryiconbg="<?php echo $pelicula['color_fecha']; ?>"><?php echo $pelicula['fecha_estreno']; ?></span>
 													<div class="post_content_wrapper theme_puzzles " data-puzzlecolor="<?php echo $pelicula['color']; ?>">
-														<h2 class="post_subtitle"><a href="<?php echo site_url(); ?>single-format-standard.html"><?php echo $pelicula['titulo']; ?></a></h2>
+														<h2 class="post_subtitle"><a href="<?php echo site_url(); ?>pelicula/<?php echo $pelicula['url']; ?>"><?php echo $pelicula['titulo']; ?></a></h2>
 														<div class="reviews_summary blog_reviews" data-puzzlecolor="<?php echo $pelicula['color']; ?>">
 															<div class="criteria_summary criteria_row">
 																<span class="criteria_stars" title="<?php echo $pelicula['valoracion_5']; ?> de 5">
@@ -29,7 +32,14 @@
 																</span>
 															</div>
 														</div>
-														<div class="post_descr"><p>Descripcion...</p></div>
+														<div class="post_descr">
+															
+															<a  data-id="<?php echo $pelicula['id_pelicula']; ?>" class="candidata sc_button sc_button_style_grey sc_button_size_small" href="#">Candidata</a>
+															<a data-id="<?php echo $pelicula['id_pelicula']; ?>" class="rechazar sc_button sc_button_style_grey sc_button_size_small" href="#">Rechazar</a>
+															<a  class="ver_ficha sc_button sc_button_style_grey sc_button_size_small" href="<?php echo site_url(); ?>pelicula/<?php echo $pelicula['url']; ?>">Ver</a>
+															
+
+														</div>
 														<div class="post_content_padding theme_puzzles"></div>
 													</div>
 												</div>
